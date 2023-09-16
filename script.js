@@ -30,9 +30,8 @@ function addData() {
 
 // 3. Remove Admins
 function removeAdmin() {
-    const filteredData = data.filter(person => person.profession.toLowerCase() !== "admin");
-    data = filteredData;
-    console.log("Admins removed:", data);
+    const filteredData = data.filter(person => person.profession !== "admin");
+    console.log("Admins removed:", filteredData);
   }
 
 // 4. Concatenate Array
